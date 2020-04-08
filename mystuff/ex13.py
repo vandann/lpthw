@@ -2,6 +2,9 @@ from sys import argv
 # read the WYSS section for how to run this
 script, first, second, third = argv
 
+# argv for now is just a list
+print(">>>> argv=", repr(argv))
+
 print("This script is called:", script)
 print("Your first variable is:", first)
 print("Your second variable is:", second)
