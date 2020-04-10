@@ -15,7 +15,7 @@ weight = input()
 print(f"So, you're {age} old, {height} tall and {weight} heavy.")
 
 # tried another version and it worked!
-age = int(input('how old are you?')) # went over int function to make input a #
+age = int(input("How old are you?")) # went over int function to make input a #
 height = input("How tall are you?")
 weight = input("How much do you weight?")
 
