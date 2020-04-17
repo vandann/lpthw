@@ -46,6 +46,7 @@ print(">>>> start_point value before calc", repr(start_point))
 start_point = start_point / 10
 print(">>>> start_point value after calc ", repr(start_point))
 print("We can also do that this way:")
+# this is IMPORTANT! below line embeds 3 values (a list) into variable formula
 formula = secret_formula(start_point)
 # this is an easy way to apply a list to a format string
 print(">>>> formula value ", repr(formula))
