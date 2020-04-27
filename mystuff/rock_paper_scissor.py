@@ -56,7 +56,7 @@ def main(again):
     print("Shoot!")
     time.sleep(1)
 
-    print("You rolled, {} and the computer had, {}.".format(person,rand))
+    print("You rolled {} and the computer rolled {}.".format(person,rand))
 
     if person == rand:
         print("You tied!!")

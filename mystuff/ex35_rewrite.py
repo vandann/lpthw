@@ -172,7 +172,7 @@ def room6():
         retry(room6)
 
 def room7():
-    print("You realize you time is up and the kidnappers are home!")
+    print("You realize your time is up and the kidnappers are home!")
     print("What do you do??")
     print("1. Hide in the closet.")
     print("2. Move to another room.")
