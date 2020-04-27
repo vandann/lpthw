@@ -1,3 +1,5 @@
+# new room, pig_room for study drill
+
 from sys import exit
 # I notice here there's no arguments passed to this function... so i guess it
 # just runs and doesn't need any inputs
@@ -62,6 +64,23 @@ def cthulhu_room():
     else:
         cthulhu_room
 
+def pig_room():
+    print("You walk in and are greeted with a stench.")
+    print("The room is full of pigs and mud.")
+    print("Do you walk strait through the room to the door or sneak along the walls?")
+
+    choice = input("> ")
+
+    if "sneak" in choice:
+        print("Great job! You didn't fall into the mud pit")
+        print("You make it to the door and go inside.")
+        bear_room()
+    elif "walk" or "strait" in choice:
+        dead("You fall into a huge mud pit and sink to the bottom.")
+    else:
+        print("That isn't a valid choice.")
+
+
 def dead(why):
     print(why, "Good job!")
     exit(0)
@@ -74,7 +93,7 @@ def start():
     choice = input("> ")
 
     if choice == "left":
-        bear_room()
+        pig_room()
     elif choice == "right":
         cthulhu_room()
     else:
